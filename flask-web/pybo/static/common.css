@@ -89,8 +89,8 @@
 .template > p {display:block; position:relative; width:auto; margin-top:10px; margin-left:45px; font-size:14px; font-weight:400; color:#565656; line-height:24px;}
 .template > .box {margin-top:20px; margin-left:45px; padding:20px 25px; border:#e6e6e6 solid 1px; background-color:#f9f9f9; font-size:14px; font-weight:400; color:#565656; line-height:24px;}
 .template strong {font-weight:500; color:#201f2d;}
-.template a {color:#201f2d;}
-.template a:hover {text-decoration:underline; text-decoration-color:rgba(0, 174, 239, 0.7);}
+.template a {color:#3f2920;}
+.template a:hover {text-decoration:underline; text-decoration-color:rgba(240, 174, 97, 0.7);}
 .template > ul {display:block; position:relative; width:auto; margin-top:10px; margin-left:45px; font-size:14px; font-weight:400; color:#565656; line-height:24px;}
 .template > ul > li {position:relative; margin:5px 0; padding-left:10px;}
 .template > ul > li:before {content:""; position:absolute; left:0px; top:11px; width:3px; height:3px; border-radius:50%; background-color:#8a8a8a;}
