@@ -68,7 +68,7 @@ body {
 }
 body {font-family:"Noto Sans KR","NanumGothic","NanumGothicBold","verdana","gulim","dotum", sans-serif !important;}
 
-
+pointer-events: none; 
 
 ol, ul, li{margin:0; padding:0; list-style:none;}
 hr {display:none;}
