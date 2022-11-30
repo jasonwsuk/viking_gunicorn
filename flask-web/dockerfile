@@ -1,6 +1,6 @@
 FROM python:3.10-alpine 
-WORKDIR /flask-web
 COPY . .
+WORKDIR /flask-web
 SHELL ["/bin/sh", "-c"]
 RUN pip install --upgrade pip wheel greenlet migrate flask_ext psycopg2-binary -r 'requirements.txt'
 ENV FLASK_APP "pybo"
