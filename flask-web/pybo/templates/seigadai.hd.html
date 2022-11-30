@@ -1,0 +1,378 @@
+<div id="accessibility">
+	<strong class="blind">컨텐츠바로가기</strong>
+	<ul>
+		<li><strong>본문으로 바로가기</strong></li>
+		<li><strong>하단메뉴 바로가기</strong></li>
+	</ul>
+</div>
+
+
+<div id="wrap">
+
+    
+        <div class="head_navi">
+	<h1 style="transform: translate3d(0px, 0px, 0px);"><div class="sound_only">로고 배경이미지</div></h1>
+	<div class="navigator_menu" style="position: absolute;">
+		<ul id="webNavi" class="menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+			<li class="menu_list ml0 main_logo"><a href="#atsumare" title="메인페이지로 이동" style="padding: 0px; margin-top: 0px;"><img src="{{ url_for('static', filename='logo.png') }}" style="width:100%;" alt="팀 바이킹 로고"></a></li>
+			<li class="menu_list">
+				<a href="#atsumare" class="sf-with-ul">팀 바이킹 소개</a>
+				<ul class="menu_sub" style="display: none;">
+					<li><a href="#atsumare">예정 일정</a></li>
+					<li><a href="#atsumare">우리의 발자취</a></li>
+					<li><a href="#atsumare">팀장의 말과 글</a></li>
+					<li><a href="#atsumare">팀원의 말과 글</a></li>
+				</ul>
+			</li>
+			<li class="menu_list">
+				<a href="#atsumare" class="sf-with-ul">새싹 뉴스 룸</a>
+				<ul class="menu_sub" style="display: none;">
+					<li><a href="#atsumare">새싹 생방</a></li>
+					<li><a href="#atsumare">새싹 브리핑</a></li>
+					<li><a href="#atsumare">언론 보도</a></li>
+					<li><a href="#atsumare">새싹 이야기</a></li>
+					<li><a href="#atsumare">새싹 일기</a></li>
+				</ul>
+			</li>
+			<li class="menu_list">
+				<a href="#atsumare" class="sf-with-ul">연구 자료</a>
+				<ul class="menu_sub" style="display: none;">
+					<li><a href="#atsumare">연구 현안</a></li>
+					<li><a href="#atsumare" target="_blank" rel="noopener noreferrer">연구 브리핑</a></li>
+					<li><a href="#atsumare">팀 과제</a></li>
+					<li><a href="#atsumare" style="line-height:20px;">연구 상황 보고</a></li>
+					<li><a href="#atsumare">숫자로 보는 연구 </a></li>
+				</ul>
+			</li>
+			<li class="menu_list">
+				<a href="#atsumare" class="sf-with-ul">국민소통 광장</a>
+				<ul class="menu_sub" style="display: none;">
+					<li><a href="#atsumare">국민 개헌안</a></li>
+					<li><a href="#atsumare">토론방</a></li>
+					<li><a href="#atsumare">국민 청원 게시판</a></li>
+					<li><a href="#atsumare" target="_blank" rel="noopener noreferrer">국민신문고</a></li>
+					<li><a href="#atsumare" target="_blank" rel="noopener noreferrer">국민참여예산</a></li>
+					<li><a href="#atsumare" target="_blank" rel="noopener noreferrer">인재추천</a></li>
+					<li><a href="#atsumare" target="_blank" rel="noopener noreferrer">문래동 사진관</a></li>
+				</ul>
+			</li>
+			<li class="menu_list">
+				<a href="#atsumare" class="sf-with-ul">새싹 알림</a>
+				<ul class="menu_sub" style="display: none;">
+					<li><a href="#atsumare">정보 공개</a></li>
+					<li><a href="#atsumare" target="_blank" rel="noopener noreferrer">취업 상황판</a></li>
+					<li><a href="#atsumare">새싹 조직도</a></li>
+					<li><a href="#atsumare">예산 운용 상황</a></li>
+					<li>
+						<a href="#atsumare" style="line-height:20px;">임원후보자<br>사전 질문서</a>
+					</li>
+					<li><a href="#atsumare" target="_blank" rel="noopener noreferrer">새싹 기록관</a></li>
+					<li><a href="#atsumare">오시는 길</a></li>
+				</ul>
+			</li>
+			<li class="menu_list mr0">
+				<a href="#atsumare">새싹 관람 신청</a>
+			</li>
+
+
+			<p class="main_search_icon"><button id="trigger-overlay" class="search_icon" type="button">검색창 열기</button></p>
+
+			<div class="en_btn">
+				<a href="#atsumare" title="영문페이지로 이동">
+					<span><img src="{{ url_for('static', filename='language_icon.gif') }}" alt="영문페이지로 이동"> English</span>
+				</a>
+			</div>
+
+
+
+		</ul>
+
+
+		<div class="overlay overlay-slidedown">
+			<button type="button" class="overlay-close">검색창 닫기</button>
+			<div class="full_search">
+				<form name="" action="https://www.president.go.kr/search" method="post" class="">
+					<fieldset>
+						<ul class="full_search_btn">
+							<li class="search_box">
+								<label for="loginid" class="hide">검색창</label>
+								<input type="text" title="검색어입력" name="query" id="loginid" class="" placeholder="검색어를 입력해주세요." value="">
+							</li>
+							<li class="search_btn">
+								<input type="submit" value="검색" class="">
+							</li>
+						</ul>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+		<script src="{{ url_for('static', filename='modernizr.custom.js') }}"></script>
+		<script src="{{ url_for('static', filename='classie.js') }}"></script>
+		<script src="{{ url_for('static', filename='search_btn.js') }}"></script>
+
+
+	</div>
+</div>
+
+<header id="header" class="">
+    <div class="h_logo">
+        <a href="#atsumare" title="메인페이지로 이동">
+            <h1 class="blind">대한민국 새싹</h1>
+        </a>
+    </div>
+    <hr>
+    <div class="h_search">
+        <h2 class="blind">통합검색</h2>
+        <div class="hs_btn">
+            <button type="button" id="search_btn">
+                <i></i>
+                <span class="blind">Search Btn</span>
+            </button>
+        </div>
+        <div class="hs_wrap">
+            <script>
+                $(document).ready(function () {
+                    $('#form-search').submit(function () {
+                        var keyword = $(this).find('input[name="query"]').val();
+                        var regex = /^([a-zA-Z0-9가-힣 ]){2,}$/i;
+                        if (!regex.test(keyword)) {
+                            alert('검색어는 한글, 영문 숫자를 2글자 이상으로 입력해주세요.');
+                            return false;
+                        }
+                        return true;
+                    });
+                });
+            </script>
+            <form id="form-search" action="https://www.president.go.kr/search">
+                <fieldset>
+                    <legend>통합검색폼</legend>
+                    <div class="hs_group">
+                        <div class="hs_input">
+                            <label for="hs_keyword" class="blind">검색어</label>
+                            <input type="text" id="hs_keyword" name="query" placeholder="검색어를 입력해주세요." required="">
+                        </div>
+                        <button type="submit" class="hs_ok">검색</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div class="h_gnb">
+        <h2 class="blind">메인메뉴</h2>
+        <nav class="hg_wrap mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar" style="overflow: visible;"><div id="mCSB_1" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: 0px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position: relative; left: 0px; top: 0px;" dir="ltr">
+            <ul class="depth1">
+
+                
+                    <li class="
+                        
+                                                    hg_president
+                                                    ">
+                        <button type="button"><h3>팀 바이킹 소개 <i><span class="sound_only">팀 바이킹 소개 </span></i></h3></button>
+                        <ul class="depth2">
+                            								                                <li>
+                                    <a href="#atsumare">예정 일정</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare">우리의 발자취</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare">팀장의 말과 글</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare">팀원의 말과 글</a>
+                                </li>
+								                                                    </ul>
+
+
+                    </li>
+
+                
+                    <li class="
+                        
+                                                    hg_newsroom
+                                                    ">
+                        <button type="button"><h3>새싹 뉴스룸 <i><span class="sound_only">새싹 뉴스룸 </span></i></h3></button>
+                        <ul class="depth2">
+                            								                                <li>
+                                    <a href="#atsumare">새싹 생방</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare">새싹 브리핑</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare">언론 보도</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare">새싹 이야기</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare">새싹 일기</a>
+                                </li>
+								                                                    </ul>
+
+
+                    </li>
+
+                
+                    <li class="
+                        
+                                                    hg_policy
+                                                    ">
+                        <button type="button"><h3>연구 자료 <i><span class="sound_only">연구 자료 </span></i></h3></button>
+                        <ul class="depth2">
+                            								                                <li>
+                                    <a href="#atsumare">연구 현안</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare" target="_blank" rel="noopener noreferrer">연구 브리핑</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare">팀 과제</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare">연구 상황 보고</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare">숫자로 보는 연구 </a>
+                                </li>
+								                                                    </ul>
+
+
+                    </li>
+
+                
+                    <li class="
+                                                    on
+                        
+                                                    hg_community
+                                                    ">
+                        <button type="button"><h3>국민소통 광장 <i><span class="sound_only">국민소통 광장 </span></i></h3></button>
+                        <ul class="depth2">
+                            								                                <li>
+                                    <a href="#atsumare">국민 개헌안</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare">토론방</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare">국민 청원 게시판</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare" target="_blank" rel="noopener noreferrer">국민신문고</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare" target="_blank" rel="noopener noreferrer">국민참여예산</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare" target="_blank" rel="noopener noreferrer">인재추천</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare" target="_blank" rel="noopener noreferrer">문래동 사진관</a>
+                                </li>
+								                                                    </ul>
+
+
+                    </li>
+
+                
+                    <li class="
+                        
+                                                    hg_cheongwadae
+                                                    ">
+                        <button type="button"><h3>새싹 알림 <i><span class="sound_only">새싹 알림 </span></i></h3></button>
+                        <ul class="depth2">
+                            								                                <li>
+                                    <a href="#atsumare">정보공개</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare" target="_blank" rel="noopener noreferrer">취업 상황판</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare">새싹 조직도</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare">예산 운용 상황</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare">임원후보자 사전 질문서</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare" target="_blank" rel="noopener noreferrer">새싹 기록관</a>
+                                </li>
+								                            								                                <li>
+                                    <a href="#atsumare">오시는 길</a>
+                                </li>
+								                            								                                                    </ul>
+
+
+                    </li>
+
+                				<li><button type="button" onclick="location.href=&#39;/tours/about&#39;;"><h3>새싹 관람 신청<i style="background-position-x:0;background-position-y:50%"><span class="sound_only">새싹 관람 신청</span></i></h3></button></li>
+
+				<li><button type="button" onclick="location.href=&#39;http://english.president.go.kr&#39;;"><h3>English<i class="fa fa-globe" aria-hidden="true" style="background:none; font-size:38px"><span class="sound_only">English</span></i></h3></button></li>
+
+
+            </ul>
+        </div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></nav>
+    </div>
+</header>
+
+
+
+
+
+
+
+
+    
+    <hr>
+
+        
+    <div id="contents" class="c_sub">
+
+        
+            <section class="cs_hero newsroom">
+		<div class="sound_only">국민 청원 게시판 </div>
+        <div class="csh_txt">
+            <h2 id="atsumare" class="title t1 bold cw motion fadeInDown visible" data-animation="fadeInDown">국민 청원 게시판</h2>
+            <p class="text bold big cw motion fadeInDown visible" data-animation="fadeInDown"></p>
+        </div>
+
+            </section>
+
+
+        
+        <section id="cont_view" class="cs_wrap">
+
+            
+                
+            
+            
+                <div class="cs_tab">
+        <div class="tab div4">
+            <ul>
+                                    <li class="motion fadeInLeft visible" data-animation="fadeInLeft">
+                        <a href="#atsumare" class="on">
+                            최신순
+                        </a>
+                    </li>
+                                    <li class="motion fadeInLeft visible" data-animation="fadeInLeft">
+                        <a href="#atsumare">
+                            추천순
+                        </a>
+                    </li>
+                                    <li class="motion fadeInLeft visible" data-animation="fadeInLeft">
+                        <a href="#atsumare">
+                            만료된 청원
+                        </a>
+                    </li>
+                                    <li class="motion fadeInLeft visible" data-animation="fadeInLeft">
+                        <a href="#atsumare">
+                            답변된 청원
+                        </a>
+                    </li>
+                            </ul>
+        </div>
+    </div>

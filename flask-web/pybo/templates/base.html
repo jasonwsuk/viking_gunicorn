@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Start of seigadai meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="theme-color" content="#082e59">
+    <meta name="description" content="Ahoy, Viking! 바이킹 청원게시판">
+    <meta name="keywords" content="서울산업진흥원, 서울청년취업사관학교, 클라우드 SW엔지니어 양성 과정, 새싹, Sessac, Viking, 바이킹">
+    <meta name="author" content="바이킹(Viking)">
+    <meta n content="telephone=no">
+    <meta property="og:type" content="website">
+    <meta property="og:title">
+    <meta property="og:url" content="https://sessacviking.com/">
+    <meta property="og:site_name" content="바이킹 청원게시판">
+    <meta property="og:description" content="Ahoy, Viking! 바이킹 청원게시판">
+    <!-- End of seigadai meta -->
+    <!-- Start of seigadai CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='banner-styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='iconochive.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='favicon.png') }}">
+    <link rel="icon" href="{{ url_for('static', filename='logo.png') }}">
+    <link rel="icon" href="{{ url_for('static', filename='language_icon.gif') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='init.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='common.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='layout.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='jquery.mCustomScrollbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='flexslider.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='animate.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='board.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+	<link rel="stylesheet" href="font-awesome.css') }}">
+    <!-- End of seigadai CSS -->
+    <!-- Start of seigadai JS -->
+    <script type="text/javascript" async="" src="{{ url_for('static', filename='analytics.js') }}"></script>
+    <script src="{{ url_for('static', filename='analytics.js(1)') }}" type="text/javascript"></script>
+    <script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app223.us.archive.org';v.server_ms=831;archive_analytics.send_pageview({});});</script>
+    <script type="text/javascript" src="{{ url_for('static', filename='bundle-playback.js') }}" charset="utf-8"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='wombat.js') }}" charset="utf-8"></script>
+    
+    <!-- End Wayback Rewrite JS Include -->
+        
+    <script src="{{ url_for('static', filename='html5.js') }}"></script>
+    <script src="{{ url_for('static', filename='jquery-1.11.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='jquery.form.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='navigation.js') }}"></script>
+    <script src="{{ url_for('static', filename='jquery.validate.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='jquery.mCustomScrollbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='jquery.mousewheel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='jquery.flexslider-min.js') }}"></script>
+    <script src="{{ url_for('static', filename='jquery.appear.js') }}"></script>
+    <script src="{{ url_for('static', filename='SmoothScroll.js') }}"></script>
+    <script src="{{ url_for('static', filename='moment.min.js') }}"></script>
+    <script>
+    $(document).ready(function(){
+        var webNavi = $('#webNavi').superfish({
+        });
+    });
+    </script>
+    <!-- End of seigadai JS -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <!-- pybo CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Hello, pybo!</title>
+</head>
+<body>
+<!-- 네비게이션바 -->
+{% include "navbar.html" %}
+{% include "seigadai.hd.html" %}
+<!-- 기본 템플릿 안에 삽입될 내용 Start -->
+{% block content %}
+{% endblock %}
+<!-- 기본 템플릿 안에 삽입될 내용 End -->
+{% include "seigadai.tl.html" %}
+<!-- Bootstrap JS -->
+<script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+<!-- 자바스크립트 Start -->
+{% block script %}
+{% endblock %}
+<!-- 자바스크립트 End -->
+</body>
+</html>

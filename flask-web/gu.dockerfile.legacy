@@ -1,0 +1,21 @@
+FROM python:3.8 
+WORKDIR /flask-web
+COPY . .
+SHELL ["/bin/bash", "-c"]
+RUN pip3 install gunicorn
+RUN pip3 install flask
+RUN pip3 install wheel
+RUN pip3 install migrate
+RUN pip3 install flask_migrate
+RUN pip3 install markdown
+RUN pip3 install flask_ext
+RUN pip3 install Flask-Markdown
+RUN pip3 install psycopg2
+RUN pip3 install Flask-WTF
+RUN pip3 install email_validator
+ENV FLASK_APP "pybo"
+ENV FLASK_DEBUG "true"
+ENV APP_CONFIG_FILE ../config/development.py
+ENV DB_HOST "master"
+ENTRYPOINT ["gunicorn"]
+CMD ["--bind", "0:8000", "pybo:create_app()"]

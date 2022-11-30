@@ -1,0 +1,9 @@
+FROM python:3.10-alpine 
+WORKDIR /flask-web
+COPY . .
+SHELL ["/bin/sh", "-c"]
+RUN pip install --upgrade pip wheel greenlet migrate flask_ext psycopg2-binary -r requirements.txt
+ENV FLASK_APP "pybo"
+ENV APP_CONFIG_FILE ../config/development.py
+ENTRYPOINT ["gunicorn"]
+CMD ["--bind", "0:8000", "pybo:create_app()"]
