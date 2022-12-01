@@ -1,0 +1,18 @@
+services:
+  db:
+    image: jasonwsuk/vk-postgres
+    environment:
+      - POSTGRES_PASSWORD=sukiyo
+      - POSTGRES_USER=dbmasteruser
+      - POSTGRES_DB=flask_pybo
+  gunicorn:
+    image: jasonwsuk/vk-gunicorn
+    links:
+      - db
+    environment:
+      - POSTGRES_PASSWORD=sukiyo
+      - POSTGRES_USER=dbmasteruser
+      - POSTGRES_DB=flask_pybo
+      - POSTGRES_HOST=db
+    ports:
+      - "8000:8000"
